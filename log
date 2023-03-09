@@ -2,3 +2,14 @@ Thu 09 Mar 2023 03:48:34 PM UTC:
  tests:  0|7
 total_score: 0/70
 eb00d3e
+Thu 09 Mar 2023 03:52:05 PM UTC: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘swap’:
+exercises.c:16:7: error: unused variable ‘s’ [-Werror=unused-variable]
+   16 |   int s = *a;
+      |       ^
+cc1: all warnings being treated as errors
+Compilation failed
+7b4c8a3
