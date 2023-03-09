@@ -31,3 +31,18 @@ Thu 09 Mar 2023 03:56:35 PM UTC:
  tests:  0|7
 total_score: 0/70
 1bb265d
+Thu 09 Mar 2023 04:08:41 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c:1:2: error: stray ‘#’ in program
+    1 | s#include <stdio.h>
+      |  ^
+exercises.c:1:1: error: unknown type name ‘s’
+    1 | s#include <stdio.h>
+      | ^
+exercises.c:1:11: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘<’ token
+    1 | s#include <stdio.h>
+      |           ^
+Compilation failed
+5824da8
