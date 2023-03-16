@@ -93,3 +93,35 @@ Thu 16 Mar 2023 03:28:20 PM UTC:
  tests:  3|4
 total_score: 30/70
 5aea369
+Thu 16 Mar 2023 03:29:51 PM UTC: 
+ exercises.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:82:52: error: expected ‘)’ before ‘;’ token
+   82 |     Vector* v = (Vector*) malloc((n*sizeof(Vector));
+      |                                                    ^
+      |                                                    )
+exercises.c:85:1: error: expected ‘,’ or ‘;’ before ‘}’ token
+   85 | }
+      | ^
+test.c:251:5: error: ‘main’ is normally a non-static function [-Werror=main]
+  251 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:271:1: error: expected declaration or statement at end of input
+  271 | }
+      | ^
+In file included from test.c:5:
+exercises.c:82:13: error: unused variable ‘v’ [-Werror=unused-variable]
+   82 |     Vector* v = (Vector*) malloc((n*sizeof(Vector));
+      |             ^
+test.c:271: error: control reaches end of non-void function [-Werror=return-type]
+  271 | }
+      | 
+At top level:
+test.c:251:5: error: ‘main’ defined but not used [-Werror=unused-function]
+  251 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1db4414
