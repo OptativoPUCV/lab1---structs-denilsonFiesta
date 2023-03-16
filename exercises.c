@@ -81,7 +81,7 @@ Vector * crearVector(int n) {
 
     Vector* v = (Vector*) malloc(sizeof(Vector));
 
-    v->datos = (int*) calloc(n*sizeof(int*));
+    v->datos = (int*) calloc(n, sizeof(int*));
   
    return v;
 }
